@@ -137,9 +137,10 @@
 
   .about {
     display: flex;
+    height: 58.8rem;
+    padding-top: 9rem;
+    padding-bottom: 10rem;
     &__content {
-      padding-top: 8rem;
-      padding-bottom: 10rem;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -175,6 +176,96 @@
           @include paragraph-l;
           margin-bottom: 2.5rem;
         }
+      }
+    }
+  }
+
+  .pets {
+    background-color: $color-light-l;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    width: 100%;
+
+    &__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__title {
+      @include h3;
+      color: $color-dark-l;
+      max-width: 40rem;
+      text-align: center;
+      padding-bottom: 6rem;
+    }
+
+    &__slider {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6.1rem;
+
+      .pet-cards {
+        display: flex;
+        justify-content: space-between;
+        // width: 100%;
+        align-items: center;
+
+        .pet-card {
+          background-color: $color-light-s;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 9px;
+
+          &:hover {
+            background-color: #fff;
+          }
+
+          &:not(:last-child) {
+            margin-right: 9rem;
+          }
+
+          &__img {
+            // border-radius: 9px 9px 0 0;
+            margin-bottom: 3rem;
+          }
+
+          &__name {
+            font: {
+              family: Georgia;
+              size: 2rem;
+            }
+            letter-spacing: 0.12rem;
+            margin-bottom: 2.8rem;
+          }
+
+          &__button {
+            margin-bottom: 2.6rem;
+          }
+        }
+      }
+    }
+
+    &__arrow {
+      width: 5.2rem;
+      height: 5.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-dark-3xl;
+      font-size: 1.6rem;
+      border: 1px solid $color-primary-light;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-primary-light;
       }
     }
   }
