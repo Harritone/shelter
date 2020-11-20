@@ -67,9 +67,9 @@
               <img src="../../assets/about-pets.png" alt="Cat and Dog" />
             </div>
             <div class="about-content__article">
-              <div class="about-content__heading">
+              <h3 class="about-content__heading">
                 About the shelter “Cozy House”
-              </div>
+              </h3>
               <div class="about-content__text">
                 <p class="about-content__paragraph">
                   Currently we have 121 dogs and 342 cats on our hands and
@@ -99,7 +99,9 @@
               <p>are looking for a house</p>
             </div>
             <div class="pets__slider">
-              <div class="pets__arrow pets__arrow_left">&larr;</div>
+              <div class="arrow-wrapper">
+                <div class="pets__arrow">&larr;</div>
+              </div>
               <div class="pet-cards">
                 <div class="pet-card">
                   <div class="pet-card__img">
@@ -144,12 +146,181 @@
                   >
                 </div>
               </div>
-              <div class="pets__arrow pets__arrow_right">&rarr;</div>
+              <div class="arrow-wrapper">
+                <div class="pets__arrow">&rarr;</div>
+              </div>
             </div>
-            <button class="button button__primary">Get to know the rest</button>
+            <button class="button button__primary pets__button">
+              Get to know the rest
+            </button>
           </div>
         </div>
       </section>
-    </main>
+
+      <section class="help">
+        <div class="help__wrapper wrapper">
+          <h3 class="help__title">
+            <span>How you can help</span>
+            <span>our shelter</span>
+          </h3>
+          <div class="help__content">
+            <div class="help__item">
+              <img
+                class="help__item-icon"
+                src="../../assets/icons/icon-pet-food.svg"
+                alt=""
+              />
+              <h4 class="help__item-title">Pet food</h4>
+            </div>
+            <div class="help__item">
+              <img
+                class="help__item-icon"
+                src="../../assets/icons/icon-transportation.svg"
+                alt=""
+              />
+              <h4 class="help__item-title">Transportation</h4>
+            </div>
+            <div class="help__item">
+              <img
+                class="help__item-icon"
+                src="../../assets/icons/icon-toys.svg"
+                alt=""
+              />
+              <h4 class="help__item-title">Toys</h4>
+            </div>
+            <div class="help__item">
+              <img
+                class="help__item-icon"
+                src="../../assets/icons/icon-bowls-and-cups.svg"
+                alt=""
+              />
+              <h4 class="help__item-title">Bowls and cups</h4>
+            </div>
+            <div class="help__item">
+              <img
+                class="help__item-icon"
+                src="../../assets/icons/icon-shampoos.svg"
+                alt=""
+              />
+              <h4 class="help__item-title">Shampoos</h4>
+            </div>
+            <div class="help__item">
+              <img
+                class="help__item-icon"
+                src="../../assets/icons/icon-vitamins.svg"
+                alt=""
+              />
+              <h4 class="help__item-title">Vitamins</h4>
+            </div>
+            <div class="help__item">
+              <img
+                class="help__item-icon"
+                src="../../assets/icons/icon-medicines.svg"
+                alt=""
+              />
+              <h4 class="help__item-title">Medicines</h4>
+            </div>
+            <div class="help__item">
+              <img
+                class="help__item-icon"
+                src="../../assets/icons/icon-collars-leashes.svg"
+                alt=""
+              />
+              <h4 class="help__item-title">Collars / leashes</h4>
+            </div>
+            <div class="help__item">
+              <img
+                class="help__item-icon"
+                src="../../assets/icons/icon-sleeping-area.svg"
+                alt=""
+              />
+              <h4 class="help__item-title">Sleeping areas</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="donation">
+        <div class="donation__wrapper wrapper">
+          <div class="dontation__image-wrapper">
+            <img
+              src="../../assets/donation-dog.png"
+              alt=""
+              class="donation__image"
+            />
+          </div>
+          <div class="donation__content">
+            <h3 class="donation__title">
+              <span>You can also</span>
+              <span>make a donation</span>
+            </h3>
+            <h5 class="donation__subtitle">
+              Name of the bank / Type of bank account
+            </h5>
+            <a href="#" class="donation__payment">
+              <img src="../../assets/icons/credit-card.svg" alt="" />
+              <h4 class="donation__payment-text">8380 2880 8028 8791 7435</h4>
+            </a>
+            <p class="donation__description">
+              Legal information and lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+              ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="wrapper footer__wrapper">
+          <div class="footer__content">
+            <div class="footer__contacts">
+              <h3 class="footer__contacts-title">
+                <span>
+                  For questions
+                </span>
+                <span>
+                  and suggestions
+                </span>
+              </h3>
+              <div class="footer__contacts-mail">
+                <img src="../../assets/icons/icon-email.svg" alt="Mail" class="footer__contacts-mail">
+                <a href="#" class="footer__contacts-mail-text">email@shelter.com</a>
+              </div>
+              <div class="footer__contacts-phone">
+                <img src="../../assets/icons/icon-phone.svg" alt="phone" class="footer__contacts-phone">
+                <a href="#" class="footer__contacts-phone-text">+13 674 567 75 54</a>
+              </div>
+            </div>
+            <div class="footer__locations">
+              <h3 class="footer__locations-title">
+                <span>
+                  We are waiting 
+                  <span>
+                    for your visit
+                  </span>
+              </h3>
+              <div class="footer__locations-address">
+                <img src="../../assets/icons/icon-marker.svg" alt="marker" class="footer__locations-marker">
+                <a href="#" class="footer__locations-address-place">
+                  <span>
+                    1 Central Street, Boston
+                    </span> 
+                    <span>(entrance from the store)
+                      </span>
+                    </a>
+              </div>
+              <div class="footer__locations-address">
+                <img src="../../assets/icons/icon-marker.svg" alt="marker" class="footer__locations-marker">
+                <a href="#" class="footer__contacts-address-place">18 South Park, London</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__image-wrapper">
+            <img src="../../assets/footer-puppy.png" alt="" class="footer__image">
+          </div>
+        </div>
+      </footer>
+
   </body>
 </html>

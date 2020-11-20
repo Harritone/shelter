@@ -10,6 +10,8 @@
   padding: 15px 45px;
   cursor: pointer;
 
+  transition-duration: 0.5s;
+
   &__primary {
     background-color: $color-primary-light;
     &:hover {
@@ -18,10 +20,12 @@
   }
 
   &__secondary {
-    border: 2px solid $color-primary;
+    // border: 2px solid $color-primary;
+    box-shadow: inset 0 0 0 2px $color-primary;
 
     &:hover {
       background-color: $color-primary;
+      box-shadow: none;
     }
   }
 }

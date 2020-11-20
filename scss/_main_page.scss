@@ -183,7 +183,7 @@
   .pets {
     background-color: $color-light-l;
     padding-top: 8rem;
-    padding-bottom: 10rem;
+    padding-bottom: 10.2rem;
     width: 100%;
 
     &__wrapper {
@@ -207,12 +207,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 6.1rem;
+      margin-bottom: 6rem;
 
       .pet-cards {
+        padding: 0 5.3rem;
         display: flex;
         justify-content: space-between;
-        // width: 100%;
+        width: 100%;
         align-items: center;
 
         .pet-card {
@@ -228,12 +229,12 @@
           }
 
           &:not(:last-child) {
-            margin-right: 9rem;
+            // margin-right: 9rem;
           }
 
           &__img {
             // border-radius: 9px 9px 0 0;
-            margin-bottom: 3rem;
+            margin-bottom: 2.8rem;
           }
 
           &__name {
@@ -242,11 +243,17 @@
               size: 2rem;
             }
             letter-spacing: 0.12rem;
-            margin-bottom: 2.8rem;
+            margin-bottom: 3.1rem;
           }
 
           &__button {
-            margin-bottom: 2.6rem;
+            margin-bottom: 3rem;
+            // height: 5.2rem;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 1.7rem;
+            // line-height: 130%;
+            // letter-spacing: 0.102rem;
+            // padding: 13px 43px;
           }
         }
       }
@@ -263,9 +270,171 @@
       border: 1px solid $color-primary-light;
       border-radius: 50%;
       cursor: pointer;
+      transition-duration: 0.5s;
 
       &:hover {
         background-color: $color-primary-light;
+      }
+    }
+
+    &__button {
+      width: 26.1rem;
+      background-color: $color-primary;
+    }
+  }
+
+  .help {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      color: $color-dark-l;
+      text-align: center;
+      @include h3();
+
+      span {
+        display: block;
+      }
+    }
+
+    &__content {
+      margin-top: 6rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      column-gap: 12rem;
+      row-gap: 5.5rem;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      &-title {
+        margin-top: 3rem;
+        columns: $color-dark-l;
+        text-align: center;
+        @include h4();
+      }
+    }
+  }
+
+  .donation {
+    padding-top: 8rem;
+    padding-bottom: 10.1rem;
+    background-color: $color-light-l;
+
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__content {
+      margin-left: 3rem;
+      max-width: 38rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__title {
+      color: $color-dark-l;
+      @include h3();
+
+      span {
+        display: block;
+      }
+    }
+
+    &__subtitle {
+      margin-top: 2rem;
+      color: $color-dark-l;
+      @include h5();
+    }
+
+    &__payment {
+      margin-top: 2rem;
+      padding: 1rem 1.5rem;
+      border-radius: 1rem;
+      display: flex;
+      background-color: $color-primary;
+      text-decoration: none;
+      color: $color-dark-l;
+
+      &-text {
+        padding-left: 1.5rem;
+        @include h4();
+      }
+    }
+
+    &__description {
+      margin-top: 2rem;
+      color: $color-dard-m;
+      @include paragraph-s();
+    }
+  }
+}
+.footer {
+  padding-top: 4rem;
+  background: $footer-gradient-background;
+
+  &__wrapper {
+    align-items: flex-start;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 23.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+    padding-right: 16.6rem;
+  }
+
+  &__locations,
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-title {
+      color: $color-light-xl;
+      @include h3();
+
+      span {
+        display: block;
+      }
+    }
+
+    &-address,
+    &-phone,
+    &-mail {
+      display: flex;
+      align-items: center;
+      &-place {
+        span {
+          display: block;
+        }
+      }
+
+      &-place,
+      &-text {
+        color: $color-primary;
+        @include h4();
+        margin-left: 2rem;
       }
     }
   }
