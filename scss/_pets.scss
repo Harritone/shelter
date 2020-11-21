@@ -1,0 +1,134 @@
+.pets-header {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  position: sticky;
+  min-height: 12rem;
+
+  .logo {
+    display: flex;
+    flex: {
+      direction: column;
+    }
+
+    &__title {
+      color: $color-dark-l;
+      @include logo_title;
+    }
+
+    &__subtitle {
+      margin-top: 1rem;
+      color: $color-dark-3xl;
+      font-size: 1.3rem;
+      text-align: center;
+      line-height: 110%;
+      letter-spacing: 1.76px;
+    }
+  }
+
+  .menu {
+    width: 44.3rem;
+    display: flex;
+
+    .list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      &__item {
+        display: flex;
+        align-items: center;
+      }
+
+      &__link {
+        color: $color-dark-3xl;
+        text-decoration: none;
+        font: {
+          family: Arial;
+          size: 1.5rem;
+        }
+        line-height: 160%;
+        border-bottom: 3px solid transparent;
+
+        transition: border 0.6s linear;
+
+        &:hover {
+          border-bottom: 3px solid $color-primary;
+        }
+
+        &_active {
+          border-bottom: 3px solid $color-primary;
+        }
+
+        &_disabled {
+          color: $color-dark-l;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  background-color: $color-light-l;
+  &__wrapper {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    flex-direction: column;
+  }
+
+  &-pets__title {
+    @include h3();
+    color: $color-dark-l;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    span {
+      display: block;
+    }
+  }
+
+  &-pets-cards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 3rem;
+    margin-bottom: 6rem;
+  }
+
+  &-paginations {
+    display: flex;
+    column-gap: 2rem;
+    // justify-content: space-between;
+    // width: 100%;
+    max-width: 34rem;
+
+    &__button {
+      @include pagination_button();
+      @include h4();
+
+      &:disabled {
+        box-shadow: inset 0 0 0 0.2rem $color-dark-s;
+        cursor: unset;
+
+        &:hover {
+          box-shadow: inset 0 0 0 0.2rem $color-dark-s;
+          background-color: transparent;
+        }
+      }
+
+      &_inactive {
+      }
+
+      &_active {
+        background-color: $color-primary-light;
+        box-shadow: none;
+        cursor: auto;
+      }
+    }
+  }
+}

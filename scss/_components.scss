@@ -1,0 +1,40 @@
+.pet-card {
+  background-color: $color-light-s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &:not(:last-child) {
+    // margin-right: 9rem;
+  }
+
+  &__img {
+    // border-radius: 9px 9px 0 0;
+    margin-bottom: 2.8rem;
+  }
+
+  &__name {
+    font: {
+      family: Georgia;
+      size: 2rem;
+    }
+    letter-spacing: 0.12rem;
+    margin-bottom: 3.1rem;
+  }
+
+  &__button {
+    margin-bottom: 3rem;
+    // height: 5.2rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.7rem;
+    // line-height: 130%;
+    // letter-spacing: 0.102rem;
+    // padding: 13px 43px;
+  }
+}
